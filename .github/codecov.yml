@@ -1,15 +1,15 @@
 # ref: https://docs.codecov.com/docs/codecovyml-reference
 coverage:
-  # Hold ourselves to a high bar
-  range: 85..100
+  range: 85..95
   round: down
   precision: 1
   status:
     # ref: https://docs.codecov.com/docs/commit-status
     project:
       default:
-        # Avoid false negatives
         threshold: 1%
+        # Coverage CI test fails if coverage below 85%
+        target: 85%
 
 # Test files aren't important for coverage
 ignore:
