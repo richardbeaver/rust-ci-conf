@@ -7,7 +7,6 @@ coverage:
     # ref: https://docs.codecov.com/docs/commit-status
     project:
       default:
-        threshold: 1%
         # Coverage CI test fails if coverage below 85%
         target: 85%
 
